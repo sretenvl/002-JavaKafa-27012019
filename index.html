@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Kafa</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="autor" content= "Sreten Vladisavljević"/>
+	<meta name="description" content="Jafa Kafa je najnovija kafeterija u Beogradu koju morate posetiti">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slideshow.css">
+	<link rel="shourtcu icon" href="images/icon.ico"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--NAVIGACIJA-->
+	<div class = "omotnavigacije">
+		<nav id = "gornjiMeni">
+			<div id = "logo">
+				<a href = "index.html"><img src = "images/LogoSaZelenimOkvirom.png"/></a>
+			</div>
+			<ul>
+				<li><a href ="#oNama">O NAMA</a></li>
+				<li><a href ="#tekstLevo">NAŠE KAFE</a></li>
+				<li><a href ="#kontakt">KONTAKT</a></li>
+				<li><a href ="#autorSlika">AUTOR</a></li>
+				<li class = "logoPoziv"><a href ="#"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;KONTAKTIRAJTE NAS</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!--KRAJ NAVIGACIJE-->
+	<main>
+		<!--SLIDE SHOW-->
+		<div class="slideshow-container">
+
+			<div class="mySlides fade active">
+			  <img src="images/sl1-500x300.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="images/sl2-500x300.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="images/sl3-500x300.png" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		
+		<!--KRAJ SLIDE SHOWA-->
+		<!--NASLOV SAJTA-->
+		<div id = "naslovPozadina">
+			<h1>SVAKOG DANA JAFA KAFA</h1>
+		</div>
+		<!--KRAJ NASLOVA SAJTA-->
+		<!--O NAMA-->
+		<div class = "omot">
+			<h2 id = "oNama">O NAMA</h2>
+		</div>
+		<div class = "omot">
+			<div class = "omotBloka">
+				<div class = "omotSlike">
+					<img src="images/sl1-500x300.png" alt="slika"/>
+				</div>
+				<div class = "omotTeksta">
+					<h3><b>KAFA ZA PONETI</b></h3>
+					<br/>
+					<p>Ako ste u žurbi ne morate brinuti, pokupite svoju omiljenu vrstu kafe i ponesite prijataljima.</p>
+					<br/>
+					<div class = "podslika">
+						<img src = "images/order-icon-1.png" class = "malaSlika" alt = "Kafa za poneti"/>
+					</div>
+				</div>
+			</div>
+			<div class = "omotBloka">
+				<div class = "omotSlike">
+					<img src="images/sl5-500x300.png" alt="slika"/>
+				</div>
+				<div class = "omotTeksta">
+					<h3><b>DOĐITE SA SVOJIM LJUBIMCEM</b></h3>
+					<br/>
+					<p>Ljubitelji dobre kafe, koji imaju ljubimce kod nas su dobrodošli. Ovo je pravo mesto za vas. Kada krenete u šetnju pozivamo vas da se odmorite u našoj kafeteriji.</p>
+				</div>
+				<div class = "podslika">
+					<img src = "images/petfriendly-icon.png" class = "malaSlika" alt = "Dozvoljene zivotinje"/>
+				</div>
+			</div>
+			<div class = "omotBloka">
+				<div class = "omotSlike">
+					<img src="images/sl3-500x300.png" alt="slika"/>
+				</div>
+				<div class = "omotTeksta">
+					<h3><b>VELIKI IZBOR KAFA</b></h3>
+					<br/>
+					<p>U našoj kafeteriji možete probati veliki broj kvalitetnih vrsta kafa iz čitavog sveta.</p>
+					<br/>
+					<div class = "podslika">
+						<img src = "images/coffee-icon.png" class = "malaSlika" alt = "Razne kafe"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--KRAJ O NAMA DELA-->
+		<!--OPISNI TEKST-->
+		<div class = "omot">
+			<div id = "tekstLevo">
+				<div class = "tekstOpis">
+					<h3>NAŠE KAFE</h3><br/>
+					<p> U našoj kafeteriji možete sedete i opustite se u našem prijatnom i tihom lokalu, ali možete i da organiujete neformalni sastanak sa poslovnim partnerima. Omogući ćemo vam najbržu wifi vezu sa Internetom.</p>
+					<p>Koja je svrha da pravite sjajnu kafu ako nemate sa kim da je podelite?
+					Ali ako usrećite dragu osobu ukusnom šoljom kafe, svet postaje bolje mesto za život.</p>
+					<p>Kafa je kao nauka, uvek postoji nešto novo što možete naučiti o njoj. Svim ljubiteljima prave, kvalitetne kafe želimo da pružimo deo te magije kroz pržene  kafe u zrnu i mlevene kafe koje mogu nabaviti kod nas.</p>
+				</div>
+				<div class = "slikaOpisna">
+					<img src = "images/sl4-500x300.png" alt = "slika"/>
+				</div>
+			</div>
+		</div>
+		<div class = "omot">
+			<div id = "tekstDesno">
+				<div class = "slikaOpisna">
+					<img src = "images/sl2-500x300.png" alt = "slika"/>
+				</div>
+				<div class = "tekstOpis">
+					<h3>KAFA</h3><br/>
+					<p><b>Espreso</b>: Ljudi koji vole ukus espresa, često  predstavljaju rođene vođe. Vredno rade i postižu sjajne rezultate kada svoju energiju usmere na postizanje nekog cilja. Predstavljaju inspiraciju mnogima, kako na poslu, tako i u društvu. Trude se da budu veoma neposredni u kontaktu sa drugim ljudima.</p>
+
+					<p><b>Dupli espresso</b>: Osobe koje najčešće naručuju dupli espreso veruju u logiku. Praktični su, vredni i nisu skloni preterivanju. Nisu podložni tuđim uticajima, ali ipak bolje funkcionišu kad dobiju precizne instrukcije od poslodavca.</p>
+
+					<p><b>Late</b>: Ljudi koji uživaju u ispijanju latea se ne brinu previše. Po prirodi su opušteni i ne trude se da iznova analiziraju situacije. Uživaju u udobnosti i društvu jednako opuštenih ljudi. Često se prepuštaju maštanju, pomalo su usporeni i lenji. Uz to, neodlučni su i  donošenje odluka za njih predstavlja veliki problem.</p>
+
+					<p><b>Kapućino</b>s: Ko voli kapućino, može sebe smatrati sofisticiranom osobom. Stil ovih osoba je jedinstven i veoma usklađen. U pitanju su veoma kreativni pojedinci, društvene prirode koji imaju širok krug prijatelja.</p>
+				</div>
+			</div>
+		</div>
+		<!--KRAJ OPISNOG TEKSTA-->
+		<!--MENI/GALERIJA-->
+		<div class = "omot">
+			<div id = "artikli">
+				
+			</div>
+		</div>
+		<!--KRAJ MENI/GALERIJA-->
+		<!--FORMA-->
+		<div id = "forma">
+			<div id = "okvirForme">
+				<img id = "slikaForme" src = "images/LogoSaZelenimOkvirom.png" alt = "logo"/>
+				<i id = "iskljucivanje" class="far fa-times-circle fa-2x"></i>
+				<form onsubmit="provera()">
+					<h1>Kontaktirajte nas</h1>
+				   	<p class = "formaT">Vaše ime</p>
+				   	<input type="text" id="ime"/><br/>
+				   	<p class = "formaT">Vaš E-mail</p><br/>
+				   	<input type="text" id="email"/><br/> 
+				   	<p class = "formaT">Predmet</p>
+				   	<input type="text" id="predmet"/><br/>  
+				   	<p class = "formaT">Poruka</p>
+				   	<textarea cols="45" rows="5" id="poruka"></textarea><br/> 
+				   	<br />
+				   	<input type="button" id = "posalji" value="Posalji">
+				</form>
+			</div>
+		</div>
+		<i id = "vracanjePocetak" class="fas fa-chevron-circle-up fa-5x"></i>
+		<!--KRAJ FORME-->
+		<!--MAPA-->
+		<div class = "omot">
+			<h2>KONTAKT</h2>
+		</div>
+		<div class = "omot">
+			<div id = "kontakt">
+				<div id = "slikaKontakt">
+					<img src = "images/mapa.png" alt = "mapa"/>
+				</div>
+				<div id = "tekstKontakt">
+					<h3>KAFA I KARAKTER</h3><br/>
+					<p>Lokacija: Zdravka Čcelara 160</p>
+					<p>Grad: Beograd</p>
+					<p>Telefon: 011 59 62 7485</p>
+					<p>Mejl: info@jafakafa.rs</p>
+					<p>Radno vreme: 8:00 - 00:00</p>
+				</div>
+			</div>
+		</div>
+		<!--KRAJ MAPE-->
+		<!--AUTOR-->
+		<div class = "omot">
+			<h2>AUTOR</h2>
+		</div>
+		<div class = "omot">
+			<div id = "autorSlika">
+				<img src = "images/Autor.png" alt = "autor"/>
+			</div>
+			<div id = "autorTekst">
+				<p>Ime i prezime: Sreten Vladisavljević<br/>
+		        Datum rođenja: 26.08.1998.<br/>
+		        Mesto rođenja: Beograd<br/>
+		        Broj indeksa: 123/17<br/>
+		        Završio sam Gimnaziju "Sveti Sava" u Beogradu i sada sam student prve godine na Visokoj ICT školi na smeru Internet tehnologije.</p>
+	    	</div>
+		</div>
+		<!--KRAJ AUTORA-->
+		<!--TEST-->
+		<div id = "carusel"></div>
+		<!--TEST KRAJ-->
+	</main>
+	<!--FOOTER-->
+	<footer>
+		<div class = "omotnavigacije">
+			<nav id = "futer">
+				<section class = "footerKolona">
+					<div id = "linkovi" class = "footerLista">
+						<a href = "https://www.facebook.com"><i class="fab fa-facebook fa-4x"></i></a>
+						<a href = "https://www.twitter.com"><i class="fab fa-twitter fa-4x"></i></a>
+						<a href = "https://www.youtube.com"><i class="fab fa-youtube fa-4x"></i></a>
+						<a href = "Dokumentacija.pdf"><i class="fas fa-file-alt fa-4x"></i></a>
+					</div>
+				</section>
+				<section class = "footerKolona">
+					<div class = "footerLista">
+						<a href = "sitemap.xml">SITE MAP</a>
+						<a href = "#"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;KONTAKTIRAJTE NAS</a>
+						<a href = "Dokumentacija.pdf">DOKUMENTACIJA</a>
+					</div>
+				</section>
+				<section class = "footerKolona">
+					<div class = "footerLista">
+						<p>Lokacija: Zdravka Pcelara 160</p>
+						<p>Grad: Beograd</p>
+						<p>Telefon: 011 59 62 7485</p>
+						<p>Mejl: info@jafakafa.rs</p>
+						<p>Radno vreme: 8:00 - 00:00</p>
+					</div>
+				</section>
+				<section class = "footerKolona">
+					<div class = "footerLista" id = "centarSolja">
+						<i class="fas fa-mug-hot fa-4x"></i>
+					</div>
+					<h4>JAFA KAFA</h4>
+				</section>
+				<section class = "footerKolona">
+					<img src="images/LogoSaZelenimOkvirom.png" alt = "Logo za futer"/>
+				</section>
+			</nav>
+
+		</div>
+		<div class = "omotnavigacije" id = "cpRight">
+			<p>Copyright &copy Sreten Vladisavljevic 123/17</p>
+		</div>
+	</footer>
+	
+	
+	<!--KRAJ FOOTERA-->
+	<script type = "text/javascript" src = "scripts/form.js"></script>
+	<script type = "text/javascript" src = "scripts/formJQ.js"></script>
+	<script type = "text/javascript" src = "scripts/animacija.js"></script>
+	<script type = "text/javascript" src = "scripts/galerija.js"></script>
+	<script type = "text/javascript" src = "scripts/slideshow.js"></script>
+</body>
+</html>

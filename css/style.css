@@ -1,0 +1,410 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+h2{
+	font-size: 2.3rem;
+	padding: 20px;
+	margin: 0 auto;
+}
+body{
+	background-image: url('../images/bgt-3.png');
+	background-position: center;
+}
+main{
+	background-color: #F5F5F5;
+	width: 80%;
+	margin: 0 auto;
+}
+.omot{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+/*NAVIGACIJA*/
+.omotnavigacije{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	z-index: 10;
+}
+#gornjiMeni{
+	position: fixed;
+	width: 100%;
+	background-color: #3B2613;
+	height: 120px;
+	display: flex;
+	z-index: 10;
+}
+#gornjiMeni ul{
+	display: flex;
+	flex-grow: 5;
+	justify-content: flex-end;
+
+}
+#gornjiMeni li{
+	padding: 50px 16px;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+#gornjiMeni a{
+	text-align: center;
+	flex-grow: 1;
+	color: white;
+}
+#logo a img{
+	height: 100px;
+	padding: 10px 30px;
+	
+}
+#logo:hover{
+	background-color: #724720;
+}
+#gornjiMeni li:hover{
+	background-color: #724720;
+  	font-weight: bold;
+  	font-size: 1.15rem;
+}
+/*NAVIGACIJA KRAJ*/
+
+/*Slide show*/
+
+/*NASLOV*/
+#naslovPozadina{
+	background-color: #E6E5EB;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 60px;
+	height: 100px;
+}
+#naslovPozadina h1{
+	font-size: 50px;
+}
+/*NASLOV KRAJ*/
+.omotBloka{
+    padding: 10px;
+    margin: 10px; 
+    border: 1px solid #3B2613;
+    border-radius: 7px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+    flex-direction: column;
+    flex: 1;
+    background-color: #ECEBEA;
+}
+.omotBloka .omotSlike img{
+	margin: auto;
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    align-items: center;
+    border-radius: 7px;
+}
+.omotTeksta{
+	box-orient: vertical;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0px; 
+	width: 90%;
+}
+.omotTeksta h3{
+	text-align: center;
+}
+.podslika{
+	box-flex: 1;
+	flex: 1 1 auto; 
+    text-align: center;
+    align-items: center;
+}
+.malaSlika{
+	margin: 0 auto;
+	align-items: center;
+}
+/*O NAMA KRAJ*/
+
+/*OPISNI TEKST*/
+#tekstLevo{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 330px;
+	display: flex;
+	padding-top: 20px;
+	opacity: 0;
+	background-color: #E6E5EB;
+}
+#tekstDesno{
+	width: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 370px;
+	display: flex;
+	opacity: 0;
+}
+.tekstOpis{
+	margin: 0 auto;
+	width: 60%;
+}
+#tekstLevo .tekstOpis{
+	margin: 0 auto;
+	justify-content: flex-start;
+	padding: 10px;
+}
+#tekstLevo .slikaOpisna{
+	justify-content: flex-end;
+	margin: 0 auto;
+}
+.slikaOpisna img{
+	max-width: 500px;
+    max-height: 300px;
+    padding: 10px;
+}
+#tekstDesno .slikaOpisna{
+	margin: 0 auto;
+	justify-content: flex-start;
+	padding-top: 20px;
+}
+#tekstDesno .tekstOpis{
+	justify-content: flex-end;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/*OPISNI TEKST KRAJ*/
+
+/*MENI/GALERIJA*/
+#artikli{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.parent{
+	width: 30%;
+	height: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background-color: #3B2613;
+}
+.meniSlika{
+	margin: auto;
+    width: 80%;
+    align-items: center;
+    margin-top: 20px;
+}
+.textArtikla{
+	text-align: center;
+	width: 80%;
+	color: white;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.opisArtikal{
+	padding: 10px;
+}
+/*MENI/GALERIJA KRAJ*/
+/*FORMA*/
+#forma{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	display: none;
+	background-color: rgba(0,0,0,0.9);
+}
+#okvirForme{
+	width: 380px;
+	height: 450px;
+	margin: 0 auto;
+	position: fixed;
+	background-color: #322314;
+	border: 15px solid #5CA55D; 
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 70px 30px;
+	z-index: 20;
+}
+#slikaForme{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+	background-color: #322314;
+}
+#iskljucivanje{
+	position: absolute;
+	color: #5CA55D;
+	right: -40px;
+	top: -50px;
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+#okvirForme p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+#okvirForme input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+#okvirForme input[type = "text"], textarea{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: white;
+	font-size: 16px; 
+}
+textarea{
+	resize: none;
+}
+#okvirForme input[type = "button"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	margin-top: 35px; 
+	background: #5CA55D;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;  
+}
+/*FORMA KRAJ*/
+/*KONTAKT*/
+#kontakt{
+	margin: 0 auto;
+	height: 450px;
+	display: flex;
+}
+#slikaKontakt{
+	flex-grow: 2;
+	overflow: auto;
+}
+#slikaKontakt img{
+	max-width: 630px;
+}
+#tekstKontakt{
+	max-width: 500px;
+    max-height: 300px;
+    padding: 40px;
+	flex-grow: 1;
+}
+/*KONTAKT KRAJ*/
+/*AUTOR*/
+#autorSlika{
+	width: 40%;
+}
+#autorSlika img{
+	margin: 0 auto;
+	padding-left: 100px;
+	margin-bottom: 40px; 
+}
+#autorTekst{
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px;
+}
+/*AUTOR KRAJ*/
+#vracanjePocetak{
+	position: fixed;
+	bottom: 10px;
+    right: 10px;
+    color: #5CA55D;
+    background-color: #3B2613;
+    border-radius: 50px;
+    padding: 5px;
+}
+/*TEST*/
+#carusel{
+	width: 100%;
+	height: 500px;
+	background-image: url("../images/pozadina.jpg");
+	background-attachment: fixed;
+	background-position: center;
+}
+/*TEST KRAJ*/
+/*FOOTER*/
+#futer{
+	width: 100%;
+	background-color: #3B2613;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+.footerKolona{
+	width: 20%;
+	height: 100%;
+	flex-grow: 2;
+	padding: 20px;	
+}
+.footerKolona h4{
+	display: flex;
+	padding-top: 10px;
+	align-items: center;
+  	justify-content: center;
+}
+.footerLista{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: left;
+  	justify-content: center;
+}
+#centarSolja{
+	align-items: center;
+}
+.footerLista a{
+	color: white;
+	padding: 5px;
+}
+.footerLista a:hover{
+	color: #D1AB6C;
+}
+#linkovi{
+	flex-direction: row;
+}
+#linkovi a{
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.footerKolona img{
+	max-width: 60%;
+	margin: 0 auto;
+}
+#cpRight{
+	width: 100%;
+	height: 50px;
+	background-color: #312214;
+}
+#cpRight p{
+	margin: 0 auto;
+	padding-top: 20px;
+	color: white;
+}
+/*FOOTER KRAJ*/
